@@ -1,4 +1,6 @@
-var angle = 0;
+var anglex = 0;
+var angley = 0;
+
 
 var x = -200;
 
@@ -12,15 +14,21 @@ function setup(){
 }
 
 
+function mouseDragged(){
+    anglex = mouseY/height * 6;
+    angley = mouseX/width * 6;
+}
+
+
+
+
 function draw(){
     background(173);
     pointLight(255,0,255, 200,0,0);
     
     
-    
-    
-    rotateX((mouseY/width)*12);
-    rotateY((mouseX/height)*-6);
+        rotateX(anglex);
+    rotateY(-angley);
 
 
 
@@ -49,6 +57,6 @@ function draw(){
     fill(255,255,0);
     rect(x,x,-2*x,-2*x);
 
-    angle += 0.1;
+
 
 }
