@@ -2,6 +2,11 @@ var anglex = 0;
 var angley = 0;
 
 
+var sx = -100;
+var sy = -100;
+var sz = -100;
+
+
 var x = -200;
 
 function setup(){
@@ -36,7 +41,7 @@ function draw(){
 
     // box();
     push();
-    translate(100,100,100);
+    translate(sx,sy,sz);
     sphere(10);
     pop();
 
