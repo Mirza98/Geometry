@@ -55,6 +55,10 @@
          <button>
 		 	<a href="physic.html">GO TO DRAWING</a>
 		 </button>
+
+         <button>
+		 	<a href="physic1.html">GO TO DRAWING</a>
+		 </button>
 		 </header>
 	</body>
 </html>
